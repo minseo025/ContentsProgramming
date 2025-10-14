@@ -22,9 +22,12 @@ public class WeatherController : MonoBehaviour
         // Thermometer_Parent에서 Thermometer_Bar의 Renderer 가져오기
         if (thermometerParent != null)
         {
-            Transform barChild = thermometerParent.Find("Thermometer_Bar");
+            Debug.Log("온도계 바 가져오기");
+            Transform barChild = thermometerParent.GetChild(0).transform;
+            Debug.Log(barChild.name);
             if (barChild != null)
             {
+                Debug.Log("온도계 바를 정상적으로 가져왔습니다");
                 barRenderer = barChild.GetComponent<Renderer>();
             }
         }

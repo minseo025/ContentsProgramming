@@ -72,10 +72,10 @@ public class CompleteTemperatureController : MonoBehaviour
         }
         
         // 5) 디버그(1초마다)
-        if (showDebugInfo && Time.time >= nextDebugTime)
-        {
-            Debug.Log("[" + gameObject.name + "] 온도: " + temperature + "도, 높이: " + height.ToString("F2"));
-            nextDebugTime = Time.time + 1.0f;  // 1초 후 다시 출력
-        }
+        // if (showDebugInfo && Time.time >= nextDebugTime)
+        // {
+        //     Debug.Log("[" + gameObject.name + "] 온도: " + temperature + "도, 높이: " + height.ToString("F2"));
+        //     nextDebugTime = Time.time + 1.0f;  // 1초 후 다시 출력
+        // }
     }
 }
